@@ -43,6 +43,21 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>2.2</version>
+
+                    <configuration>
+                        <includes>
+                            <include>com.graudata.agorum-restclient2:*</include>
+                            <include>com.graudata.gds2:*</include>
+                            <include>org.apache.chemistry.opencmis:*</include>
+                            <include>org.opendataspace:*</include>
+                        </includes>
+                    </configuration>
+                </plugin>
+
+                <plugin>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>2.6.1</version>
                 </plugin>
