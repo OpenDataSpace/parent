@@ -10,7 +10,7 @@
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
     <name>OpenDataSpace Parent</name>
-    <version>1.0.29</version>
+    <version>1.0.30</version>
 
     <prerequisites>
         <maven>3.0.1</maven>
