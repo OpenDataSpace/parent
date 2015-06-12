@@ -156,6 +156,7 @@
                         <dependency>
                             <groupId>org.opendataspace</groupId>
                             <artifactId>build-tools</artifactId>
+                            <version>${project.version}</version>
                         </dependency>
                     </dependencies>
 
@@ -257,13 +258,6 @@
     </reporting>
 
     <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.opendataspace</groupId>
-                <artifactId>build-tools</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-        </dependencies>
     </dependencyManagement>
 
     <properties>
