@@ -46,15 +46,6 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
                     <version>2.2</version>
-
-                    <configuration>
-                        <includes>
-                            <include>com.graudata.agorum-restclient2:*</include>
-                            <include>com.graudata.gds2:*</include>
-                            <include>org.apache.chemistry.opencmis:*</include>
-                            <include>org.opendataspace:*</include>
-                        </includes>
-                    </configuration>
                 </plugin>
 
                 <plugin>
@@ -165,7 +156,7 @@
                         <dependency>
                             <groupId>org.opendataspace</groupId>
                             <artifactId>build-tools</artifactId>
-                            <version>1.1.0</version>
+                            <version>${parent.version}</version>
                         </dependency>
                     </dependencies>
 
@@ -303,6 +294,7 @@
     </dependencyManagement>
 
     <properties>
+        <parent.version>1.0.28</parent.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
