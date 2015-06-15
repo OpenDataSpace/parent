@@ -156,7 +156,7 @@
                         <dependency>
                             <groupId>org.opendataspace</groupId>
                             <artifactId>build-tools</artifactId>
-                            <version>${parent.version}</version>
+                            <version>1.1.32</version>
                         </dependency>
                     </dependencies>
 
@@ -210,6 +210,14 @@
                         </execution>
                     </executions>
 
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.opendataspace</groupId>
+                            <artifactId>build-tools</artifactId>
+                            <version>1.1.32</version>
+                        </dependency>
+                    </dependencies>
+
                     <configuration>
                         <failOnViolation>false</failOnViolation>
                         <failurePriority>5</failurePriority>
@@ -217,10 +225,10 @@
                         <printFailingErrors>true</printFailingErrors>
 
                         <rulesets>
-                            <ruleset>/rulesets/java/basic.xml</ruleset>
-                            <ruleset>/rulesets/java/imports.xml</ruleset>
-                            <ruleset>/rulesets/java/strictexception.xml</ruleset>
-                            <ruleset>/rulesets/java/unusedcode.xml</ruleset>
+                            <ruleset>basic.xml</ruleset>
+                            <ruleset>rulesets/java/imports.xml</ruleset>
+                            <ruleset>rulesets/java/strictexception.xml</ruleset>
+                            <ruleset>rulesets/java/unusedcode.xml</ruleset>
                         </rulesets>
 
                         <targetJdk>1.7</targetJdk>
@@ -294,7 +302,6 @@
     </dependencyManagement>
 
     <properties>
-        <parent.version>1.1.31</parent.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
