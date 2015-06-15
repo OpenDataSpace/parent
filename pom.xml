@@ -219,7 +219,6 @@
                     </dependencies>
 
                     <configuration>
-                        <failOnViolation>false</failOnViolation>
                         <failurePriority>5</failurePriority>
                         <includeTests>true</includeTests>
                         <printFailingErrors>true</printFailingErrors>
