@@ -210,16 +210,24 @@
                         </execution>
                     </executions>
 
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.opendataspace</groupId>
+                            <artifactId>build-tools</artifactId>
+                            <version>${parent.version}</version>
+                        </dependency>
+                    </dependencies>
+
                     <configuration>
                         <failurePriority>5</failurePriority>
                         <includeTests>true</includeTests>
                         <printFailingErrors>true</printFailingErrors>
 
                         <rulesets>
-                            <ruleset>/rulesets/java/basic.xml</ruleset>
-                            <ruleset>/rulesets/java/imports.xml</ruleset>
-                            <ruleset>/rulesets/java/strictexception.xml</ruleset>
-                            <ruleset>/rulesets/java/unusedcode.xml</ruleset>
+                            <ruleset>basic.xml</ruleset>
+                            <ruleset>rulesets/java/imports.xml</ruleset>
+                            <ruleset>rulesets/java/strictexception.xml</ruleset>
+                            <ruleset>rulesets/java/unusedcode.xml</ruleset>
                         </rulesets>
 
                         <targetJdk>1.7</targetJdk>
@@ -261,7 +269,7 @@
     </dependencyManagement>
 
     <properties>
-        <parent.version>1.0.28</parent.version>
+        <parent.version>1.0.30</parent.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
