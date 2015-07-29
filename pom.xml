@@ -10,7 +10,7 @@
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
     <name>OpenDataSpace Parent</name>
-    <version>1.1.52</version>
+    <version>1.1.53</version>
 
     <prerequisites>
         <maven>3.0.1</maven>
@@ -123,7 +123,7 @@
                         <dependency>
                             <groupId>org.opendataspace</groupId>
                             <artifactId>build-tools</artifactId>
-                            <version>1.1.52</version>
+                            <version>1.1.53</version>
                         </dependency>
                     </dependencies>
                 </plugin>
