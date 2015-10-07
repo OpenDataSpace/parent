@@ -91,7 +91,6 @@
                             <arg>-Xlint:all</arg>
                         </compilerArgs>
 
-                        <optimize>true</optimize>
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
                         <source>1.7</source>
@@ -143,18 +142,10 @@
                         </execution>
                     </executions>
 
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.google.code.findbugs</groupId>
-                            <artifactId>bcel-findbugs</artifactId>
-                            <version>6.0</version>
-                        </dependency>
-                    </dependencies>
-
                     <configuration>
-                        <effort>max</effort>
+                        <effort>Max</effort>
                         <includeTests>true</includeTests>
-                        <threshold>low</threshold>
+                        <threshold>Low</threshold>
                         <xmlOutput>true</xmlOutput>
                     </configuration>
                 </plugin>
