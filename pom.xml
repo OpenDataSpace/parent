@@ -137,7 +137,7 @@
                             </goals>
 
                             <configuration>
-                                <configLocation>sun_checks.xml</configLocation>
+                                <configLocation>checkstyle.xml</configLocation>
                                 <includeTestSourceDirectory>true</includeTestSourceDirectory>
                                 <logViolationsToConsole>true</logViolationsToConsole>
                             </configuration>
