@@ -148,7 +148,7 @@
                         <dependency>
                             <groupId>org.opendataspace</groupId>
                             <artifactId>build-tools</artifactId>
-                            <version>1.1.67</version>
+                            <version>1.2.69</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -195,7 +195,7 @@
                         <dependency>
                             <groupId>org.opendataspace</groupId>
                             <artifactId>build-tools</artifactId>
-                            <version>1.1.67</version>
+                            <version>1.2.69</version>
                         </dependency>
                     </dependencies>
 
