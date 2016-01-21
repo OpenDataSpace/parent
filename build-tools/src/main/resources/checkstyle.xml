@@ -73,6 +73,14 @@
     <!--   <property name="fileExtensions" value="java"/> -->
     <!-- </module> -->
 
+    <!-- Allow MagicNumber check to be disabled with a trailing "// !MAGIC" on the same line -->
+    <module name="SuppressWithNearbyCommentFilter">
+        <property name="commentFormat" value=" !MAGIC"/>
+        <property name="checkFormat" value="MagicNumber"/>
+        <property name="messageFormat" value=".*"/>
+        <property name="influenceFormat" value="0"/>
+    </module>
+
     <module name="TreeWalker">
 
         <!-- Checks for Javadoc comments.                     -->
@@ -166,14 +174,6 @@
         <module name="FinalParameters"/>
         <module name="TodoComment"/>
         <module name="UpperEll"/>
-
-        <!-- Allow MagicNumber check to be disabled with a trailing "// !MAGIC" on the same line -->
-        <module name="SuppressWithNearbyCommentFilter">
-            <property name="commentFormat" value=" !MAGIC"/>
-            <property name="checkFormat" value="MagicNumber"/>
-            <property name="messageFormat" value=".*"/>
-            <property name="influenceFormat" value="0"/>
-        </module>
     </module>
 
 </module>
