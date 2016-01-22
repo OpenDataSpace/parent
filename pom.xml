@@ -44,8 +44,8 @@
 
     <distributionManagement>
         <repository>
-            <id>${branch}</id>
-            <url>https://artifactory.dataspace.cc/artifactory/${branch}</url>
+            <id>${repository}</id>
+            <url>https://artifactory.dataspace.cc/artifactory/${repository}</url>
         </repository>
     </distributionManagement>
 
@@ -54,6 +54,7 @@
         <newVersion>${env.VERSION}</newVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <repository>${env.REPOSITORY}</repository>
         <test.host>${env.addr}</test.host>
     </properties>
 
@@ -69,7 +70,7 @@
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>2.0.36-beta</version>
+                <version>2.0.40-beta</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
@@ -92,7 +93,7 @@
                 <plugin>
                     <groupId>com.webcohesion.enunciate</groupId>
                     <artifactId>enunciate-maven-plugin</artifactId>
-                    <version>2.1.1</version>
+                    <version>2.2.0</version>
 
                     <executions>
                         <execution>
@@ -110,7 +111,7 @@
 
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.3</version>
+                    <version>3.5</version>
 
                     <configuration>
                         <compilerArgs>
@@ -211,8 +212,6 @@
                             <ruleset>rulesets/java/strictexception.xml</ruleset>
                             <ruleset>rulesets/java/unusedcode.xml</ruleset>
                         </rulesets>
-
-                        <targetJdk>1.7</targetJdk>
                     </configuration>
                 </plugin>
 
