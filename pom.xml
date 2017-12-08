@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.opendataspace</groupId>
     <artifactId>parent</artifactId>
-    <version>1.2.95</version>
+    <version>1.2.116</version>
     <packaging>pom</packaging>
     <name>OpenDataSpace Parent</name>
     <inceptionYear>2015</inceptionYear>
@@ -156,7 +156,7 @@
                         <dependency>
                             <groupId>org.opendataspace</groupId>
                             <artifactId>build-tools</artifactId>
-                            <version>1.2.95</version>
+                            <version>1.2.116</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -203,7 +203,7 @@
                         <dependency>
                             <groupId>org.opendataspace</groupId>
                             <artifactId>build-tools</artifactId>
-                            <version>1.2.95</version>
+                            <version>1.2.116</version>
                         </dependency>
                     </dependencies>
 
